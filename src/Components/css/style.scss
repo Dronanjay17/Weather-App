@@ -37,6 +37,8 @@ html {
     transform: translate3d(0, 0, 0);
     min-width: 20rem;
     min-height: 35rem;
+
+  
 }
 
 .wave {
@@ -119,14 +121,7 @@ html {
     }
 }
 
-#date {
-    text-align: center;
-    margin-top: 0.5rem;
-    color: #57606f;
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-}
+
 
 .temp {
     margin-top: 2.5rem;
@@ -142,16 +137,10 @@ html {
     color: #57606f;
 }
 
-#weathercon {
-    height: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-}
 
-#weathercon .fas {
-    font-size: 6rem;
+ .fas {
+    font-size: 4.5rem;
+    padding-right: 16px;
     animation: fas-anime 3s linear infinite alternate;
 }
 
@@ -160,43 +149,17 @@ html {
         transform: scale(1.1);
     }
     to {
-        transform: scale(1.5)
+        transform: scale(0.85)
     }
 }
 
-@media (max-width: 600px) {
-    .box {
-        width: 90vw;
-        height: 80vh;
-    }
 
-    .wave {
-        top: 85%;
-    }
-
-    #weathercon {
-        font-size: 5em;
-    }
-
-    .info {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 500px) {
-    .box {
-        height: 80vh;
-    }
-
-    .wave {
-        top: 115%;
-    }
-}
 
 body > span {
     width: 100vw;
     text-align: center;
     color: grey;
+
 }
 
 .inputData {
@@ -205,6 +168,8 @@ body > span {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .inputField {
@@ -214,6 +179,7 @@ body > span {
     padding: 1rem 1rem;
     outline: none;
     font-size: 1.5rem;
+   
 }
 
 .errorMsg {
